@@ -1,0 +1,34 @@
+.Main{
+    background-color: #ed7014;
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+.left{
+    flex: 3px;
+    /*background-color: aqua;*/
+}
+.center{
+    flex: 5px;
+    /*background-color: brown;*/
+}
+.right{
+    flex: 4px;
+}
+.search{
+    outline: none;
+}
+.searchBar{
+    width: full;
+    height: 30px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    margin: 10px;
+}
