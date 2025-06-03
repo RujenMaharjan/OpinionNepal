@@ -5,9 +5,9 @@ import multer from "multer";
 
 
 cloudinary.config({
-  cloud_name: "dwrqlunsl",
-  api_key: 196468272772582,
-  api_secret: "WnN1D7VBPx1Zzt659IXRRw5WRrs",
+  cloud_name: "",
+  api_key: 1,
+  api_secret: "",
 });
 
 const storage = new CloudinaryStorage({
