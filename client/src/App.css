@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+.active{
+    background-color: oklch(0.901 0.076 70.697);
+}
+
+.font-bolding{
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.petition-suppourt{
+    padding: 4px 10px;
+    background-color:#93ABE1 ;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.petition-suppourt.active{
+    background-color:#6F56DF ;
+}
+
+
+/* comment css */
+.tabs{
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background: #FAF8FF;
+}
+.userProfile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.userProfile__img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.userProfile__info{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+.userProfile__info span{
+    font-size: 12px;
+    color: #A0A3B1;
+}
+.userProfile__info h3{
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #000;
+}
+
+.commentForm__textBox{
+   border-radius: 20px;
+   background-color: #FFEDD4;
+   width: 100%;
+   resize: none;
+   border: 2px solid #FFEDD4;
+   height: auto;
+   line-height: 100%;
+   padding: 10px 20px;
+}
+.commentForm__textBox:focus{
+    outline: none;
+    border: 2px solid orange;
+ }
+
+ .commentForm__formField{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+ }
+
+ .commentForm__submitBtn{
+    background-color: orange;
+    color: #fff;
+    padding:15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+    aspect-ratio: 1/1;
+    font-size: 16px;
+ }
+
+ .commentForm__submitBtn:hover{
+    background-color: #FF6900;
+ }
+
+ .comment__list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ }
+ .comment{
+    background-color: #eaeaea;
+    padding: 15px 20px;
+    border-radius: 20px;
+ }
+
+ .commentForm__submitBtn--cancel{
+    background-color: #F63F5E;
+    border-radius: 30px;
+    height: auto;
+    padding: 8px 15px;
+    aspect-ratio: auto;
+ }
+
+ .commentForm__submitBtn--cancel:hover{
+    background-color: red;
+ }
+
+ .userBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #FFF7ED;
+    padding:4px  6px;
+    padding-right: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #F63F5E;
+ }
+
+
+ .userBox span{
+    color: #FFF7ED;
+    font-weight: 600;
+ }
+
+ .suppText{
+    color:#248700 ;
+ }
+
+ .oppText{
+    color: #F63F5E;
+ }
+
+ .altText{
+    color: #6F56DF;
+ }
+
+
+ .comment--supporter{
+    background-color:  #e3e9e1;
+ }
+
+ .comment--opposer{
+    background-color:  #ffd1d8;
+ }
+
+.comment--alternative{
+    background-color: #e1dbff;
+}
+
+
+
+/* petition dialog box  */
+.petitionDialog{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFEDD4;
+    border-radius: 20px;
+    max-width: 800px;
+    min-width: 375px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10001;
+}
+.petitionDialog__title{
+   font-size:22px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.petitionDialog__list{
+   display: flex;
+   flex-direction: column;
+}
+.petitionDialog__list__item{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 15px;
+   border-radius: 20px;
+   background-color: #FFF7ED;
+   margin-bottom: 10px;
+}
+.petitionDialog__list__item__link{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.backdropCustom{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+}
+
+.trendingList{
+   overflow-y: auto;
+   padding-right: 10px;
+   padding-top: 5px ;
+   height: calc(100vh - 200px);
+}

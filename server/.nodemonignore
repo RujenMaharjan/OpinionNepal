@@ -1,0 +1,18 @@
+# Ignore node_modules
+node_modules
+.git
+temp
+logs
+
+# Ignore logs and temporary files
+logs
+*.log
+temp
+*.tmp
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore any files you don’t want Nodemon to watch
+.DS_Store
